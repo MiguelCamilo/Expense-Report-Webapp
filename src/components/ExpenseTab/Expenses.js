@@ -1,14 +1,15 @@
 import "./Expenses.css";
 import ExpenseItem from "./ExpenseItem";
+import Card from "./Card";
 
 function Expenses(props) {
   return (
-    <div className="expenses">
+    <Card className="expenses">
       {/* this is how the custom component is used after being imported from another file */}
       {/* the attributes are data passed from the object in App.js */}
       <ExpenseItem
-        // props allows for use the title from the obj in app.js
-        // and expenses brings over all data within the obj
+        // props allows for use the title from the object in app.js
+        // and expenses brings over all data within the object
         title={props.expenses[0].title}
         amount={props.expenses[0].amount}
         date={props.expenses[0].date}
@@ -28,7 +29,7 @@ function Expenses(props) {
         amount={props.expenses[3].amount}
         date={props.expenses[3].date}
       />
-    </div>
+    </Card>
   );
 }
 
