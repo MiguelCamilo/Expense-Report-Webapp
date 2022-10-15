@@ -1,8 +1,10 @@
-// import { Children } from "react";
+// this file is a seperate wrapper component
 import "./Card.css";
 
 function Card(props) {
-  return <div className="card">{props.children}</div>;
+  // anything that is recieved as a className from another file gets added to the custom component
+  const classes = "card " + props.className;
+  return <div className={classes}>{props.children}</div>;
 }
 
 export default Card;
