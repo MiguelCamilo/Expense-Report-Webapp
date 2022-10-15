@@ -1,6 +1,7 @@
 import ExpenseDate from "./ExpenseDate";
+import Card from "./Card";
 import "./ExpenseItem.css";
-import Card from "./components/CardLayout/Card";
+import "./Card.css";
 
 // by passing in a param of "props" to the func it allows
 // for data within the object in App.js to be passed
