@@ -1,5 +1,5 @@
 import "./App.css";
-import Expenses from "./components/ExpenseTab/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 
 function App() {
   // object created to store data
