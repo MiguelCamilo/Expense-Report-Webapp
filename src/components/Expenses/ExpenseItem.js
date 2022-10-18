@@ -5,7 +5,7 @@ import "../UI/Card.css";
 
 // by passing in a param of "props" to the func it allows
 // for data within the object in App.js to be passed
-function ExpenseItem(props) {
+const ExpenseItem = (props) => {
   return (
     // in jsx you have can only have one root element
     // meaning you have a parent div that wraps around the other divs
@@ -19,6 +19,6 @@ function ExpenseItem(props) {
       </div>
     </Card>
   );
-}
+};
 
 export default ExpenseItem;

@@ -1,7 +1,7 @@
 import "./App.css";
 import Expenses from "./components/Expenses/Expenses";
 
-function App() {
+const App = () => {
   // object created to store data
   const expenses = [
     {
@@ -32,6 +32,6 @@ function App() {
       <Expenses expenses={expenses} />
     </div>
   );
-}
+};
 
 export default App;
