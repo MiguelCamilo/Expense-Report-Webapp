@@ -1,5 +1,7 @@
-import "./App.css";
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
+
+import "./App.css";
 
 const App = () => {
   // object created to store data
@@ -27,7 +29,7 @@ const App = () => {
   ];
   return (
     <div>
-      <h1></h1>
+      <NewExpense />
       {/* adding the expenses=expenses is necessary to pass the data from the obj */}
       <Expenses expenses={expenses} />
     </div>

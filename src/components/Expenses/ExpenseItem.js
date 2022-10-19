@@ -5,6 +5,8 @@ import { useState } from "react";
 import "./ExpenseItem.css";
 import "../UI/Card.css";
 
+import { BsArrowClockwise } from 'react-icons/bs'
+
 // by passing in a param of "props" to the func it allows
 // for data within the object in App.js to be passed
 const ExpenseItem = (props) => {
@@ -13,7 +15,7 @@ const ExpenseItem = (props) => {
   const [title, setTitle] = useState(props.title); // remember that props.title comes from the obj in App.js
 
   const buttonClickHandler = () => {
-    setTitle("Updated!")
+    setTitle("Awaiting Title Change...")
   };
   return (
     // in jsx you have can only have one root element
@@ -29,7 +31,7 @@ const ExpenseItem = (props) => {
       {/* reason we dont add paranthesis on
        buttonClickHandler cause it will execute the above function 
        when react returns the <Card> component and that would be too early */}
-      <button onClick={buttonClickHandler}>Change Title</button>
+      <button className="title-change" onClick={buttonClickHandler}><BsArrowClockwise/></button>
     </Card>
   );
 };
