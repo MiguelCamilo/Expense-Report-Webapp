@@ -2,3 +2,16 @@
   border-radius: 12px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }
+
+.title-change {
+  cursor: pointer;
+  all: unset;
+  margin-left: 5px;
+  padding: 2px;
+  padding-top: 5px;
+}
+
+.title-change:hover {
+  background-color: #a892ee;
+  border-radius: 10px;
+}
