@@ -27,7 +27,7 @@ const App = () => {
   ];
   return (
     <div>
-      <h1>Hello world!</h1>
+      <h1></h1>
       {/* adding the expenses=expenses is necessary to pass the data from the obj */}
       <Expenses expenses={expenses} />
     </div>
