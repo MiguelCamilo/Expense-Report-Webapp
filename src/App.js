@@ -27,9 +27,14 @@ const App = () => {
       date: new Date(2022, 2, 17),
     },
   ];
+
+  const addExpenseHandler = (expense) => {
+    console.log("Data Recieved")
+    console.log(expense)
+  }
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler}/>
       {/* adding the expenses=expenses is necessary to pass the data from the obj */}
       <Expenses expenses={expenses} />
     </div>
