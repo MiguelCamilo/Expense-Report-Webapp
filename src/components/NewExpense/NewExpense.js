@@ -10,7 +10,7 @@ const NewExpense = (props) => {
     // specifically from the expenseData object within
     const expenseData = {
       ...enteredExpenseData, // "..." pulls all the key value pairs from the object
-      id: Math.random().toString(), //
+      id: Math.random().toString(),
     };
     props.onAddExpense(expenseData);
   };
